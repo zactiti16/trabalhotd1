@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wagner Cesar Vieira">
+    <title>Tudo em um</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<header>
+    <figure>
+        <a href="../index.html"><img src="../images/logo.png" alt="Sumiu" title="Este é o meu logo"></a>
+    </figure>
+    
+    <section id="Busca">
+        <img src="../images/search3.png" alt="Sumiu"/>
+        <input type="text" id="txtBusca" placeholder="Seu nome"/>
+        <button onclick="Mensagem();" id="btnBusca">Buscar</button>
+    </section>
+
+    <nav>
+        <a href="#"><button>Home</button></a>
+        <a href="../pages/minhavida.html"><button>Minha vida</button></a>
+        <a href="../pages/howto.html"><button>How-to</button></a>
+        <a href="../pages/contato.html"><button>Contato</button></a>
+    </nav>
+</header>
+<form action="cadastro.html" method="get">
+ <h3>Contato</h3>
+ <section>
+ Nome
+ <input type="text" id="nome" name="nome"
+    placeholder="Por favor, informe seu nome completo"
+    required >
+ </section>
+
+ <section>
+ E-mail
+ <input type="email" id="email" name="observa">
+ </section>
+
+ <section>
+Data de nascimento
+<input type="date" id="nascimento" name="nascimento">
+ </section>
+
+ <section>
+    Telefone
+    <input type="tel" id="telefone" name="telefone"
+    pattern="[0-9]({2})-[0-9]{4}-[0-9]{0-9}"                >
+</section>
+
+ Sexo
+ <section>
+      
+     <input type="radio" id="feminino" name="sexo">Feminino
+     <input type="radio" id="masculino" name="sexo">Masculino
+ </section>
+
+ <section>
+    CPF
+    <input type="number" id="cpf" name="cpf"
+     required>
+</section>
+
+<section>
+    Escolha sua viagem
+    <select id="viagem" name="viagem">
+       <option value="nada">Selecione abaixo</option>
+        <option value="Bebs">Bebedouro - SP</option>
+        <option value="MT">Monte Azul Paulista - SP</option>
+        
+    </select>
+</section>
+
+ <input type="submit" id="botao" name="botao" value="Gravar">
+ <input type="reset" id="botao" name="botao" value="Limpar">
+</form>                                                                   
